@@ -1,0 +1,6 @@
+{
+  "name": "HIGHGEE — Home of Satisfaction",
+  "description": "HIGHGEE is a premier Nigerian multi-service lifestyle brand offering homemade Nigerian meals, catering, crunchy plantain chips, flavour-packed beef snacks, and luxury spa & massage therapy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

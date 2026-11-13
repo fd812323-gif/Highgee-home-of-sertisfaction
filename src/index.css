@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-foods-green: #0D4A2A;
+  --color-foods-green-dark: #08331D;
+  --color-foods-gold: #E8A817;
+
+  --color-chips-gold: #F2B705;
+  --color-chips-green: #166534;
+
+  --color-beef-brown: #3B1E14;
+  --color-beef-orange: #C2521A;
+  --color-beef-gold: #E5A93C;
+
+  --color-spa-black: #0B0B0C;
+  --color-spa-gold: #D4AF37;
+  --color-spa-gold-soft: #E8D18C;
+  --color-spa-brown: #241A14;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-whatsapp-float {
+  animation: subtleFloat 3.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-whatsapp-float {
+    animation: none;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
